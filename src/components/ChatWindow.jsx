@@ -15,9 +15,9 @@ function ChatWindow({ friend, messages, onSendMessage }) {
       {friend ? (
         <>
           <h3>Chat with {friend.name}</h3>
-          <div className="messages">
+          <div className="chat-box">
             {messages.map((message, index) => (
-              <div key={index} className="message">
+              <div key={index} className="chat-message">
                 {message}
               </div>
             ))}
